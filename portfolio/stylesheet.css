@@ -1,0 +1,213 @@
+body {
+	font-family: verdana, arial, sans-serif;
+	color: #212223;
+	padding: 100px 0px 0px 0px;
+	z-index: 0;
+}s
+
+.row-content {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	min-height: 400px;
+}
+
+/* Header */
+
+header {
+	text-align: left;
+	background-size: cover;
+}
+
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.jumbotron {
+	padding: 70px 30px 70px 30px;
+	margin: 0px auto;
+	background-color: white;
+	
+}
+
+/* webpage link stlye */
+
+a {
+	text-decoration: none;
+}
+
+a:visited{
+	color: #212223; 
+}
+
+/* navigation menu */
+
+nav ul {
+	list-style-type: none;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    float:right;
+}
+nav li a{
+	font-size: 20px;
+	color: #212223;
+	display: block;
+	padding: 10px;
+	text-align: right;
+	background-color: rgba(93,175,120,0.5);
+}
+
+nav ul{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+nav img{
+	height: 300px; 
+	max-width: 100%
+}
+
+/* nav animation */
+
+nav li a:hover{
+	background-color: rgb(33,34,35);
+	color: white;
+	margin-left: -24px;
+	margin-right: 24px;
+	text-decoration: none;
+}
+nav li a:active{
+	background-color: rgb(33,34,35);
+	color: white;
+}
+
+/* nav menu dropdown 
+
+.dropdown {
+    position: relative;
+    /*display: inline-block;*/
+}
+/* nav dropdown - hidden default 
+.dropdown-content{
+	display: none;
+    position: absolute;
+    min-width: 160px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;*/
+}
+
+/* color of menu shown 
+
+.dropdown-content a{
+	background-color: rgb(33,34,35);
+	color: white;
+	text-decoration: none;
+	display: block;
+	margin-left: -24px;
+	margin-right: 24px; 
+}
+
+/* Show the dropdown menu on hover 
+
+.dropdown:hover{
+    display: block;
+    /* margin-left: -24px;
+	margin-right: 24px; */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+/*.dropdown-content a:hover{
+	background-color: rgba(93,175,120,0.5);
+	color: #212223;
+	display: inline-block;
+    margin-left: -24px;
+	margin-right: 24px;
+}*/
+
+@media screen and (max-width: 480px){
+	section {
+		display: block;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+	}
+	nav ul {
+		position: static;
+	}
+
+	.footer {
+		background-color: #2e3033;
+	}
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+img {
+	margin: auto;
+	display: block;
+	border: 7px solid white;
+	border-radius: 10px;	
+}
+
+.WandH{
+	width: 30%;
+	height: 300px;
+}
+
+/* contact form */
+
+form input{
+	display: block;
+}
+
+.input {
+	width: 100%;
+}
+
+form input[name=MESSAGE] {
+	height: 150px;
+}
+
+form input[type=submit] {
+	background-color: white;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-color: #212223;
+	margin-top: 20px;
+	height: 30px;
+	font-family: verdana;
+	font-size: 15px;
+}
+
+form input[type=submit]:hover {
+	border-style: none;
+	background-color: rgb(33,34,35);
+	color: white;
+}
+
+/* footer */
+
+.footer {
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #212223;
+}
+
+footer a:hover{
+	color: rgb(93,175,120);
+	text-decoration: none;
+}
