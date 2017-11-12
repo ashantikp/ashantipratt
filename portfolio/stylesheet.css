@@ -3,7 +3,7 @@ body {
 	color: #212223;
 	padding: 100px 0px 0px 0px;
 	z-index: 0;
-}s
+}
 
 .row-content {
 	margin: 0px auto;
@@ -37,9 +37,16 @@ a {
 	text-decoration: none;
 }
 
-a:visited{
+h1 a:hover {
+	color: rgb(93,175,120);
+	text-decoration: none;
+}
+
+a:visited {
 	color: #212223; 
 }
+
+
 
 /* navigation menu */
 
@@ -155,7 +162,6 @@ img {
 	margin: auto;
 	display: block;
 	border: 7px solid white;
-	border-radius: 10px;	
 }
 
 .WandH{
@@ -211,4 +217,22 @@ footer a {
 footer a:hover{
 	color: rgb(93,175,120);
 	text-decoration: none;
+}
+
+.projects{
+	height: 100px;
+	display: block;
+	font-size: 20px;
+	background-color: rgb(33,34,35);
+	color: white;
+	width: 50%;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.projects a {
+	color: white;
+}
+.projects:hover{
+	background-color: #FFFFFF;
+	color: #212223;
 }
