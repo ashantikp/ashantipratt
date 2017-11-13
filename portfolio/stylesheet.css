@@ -31,10 +31,13 @@ header {
 	background-color: white;
 	background-size: cover;
 	background-image: url(images/fern-1250903_crop.jpg);
-	color: white;
-	
+	color: white;	
 }
 
+.jumbotron h1{
+	font-weight: bolder;
+	letter-spacing: 5px;
+}
 /* webpage link stlye */
 
 a {
@@ -225,7 +228,7 @@ footer a {
 }
 
 footer a:hover{
-	color: rgb(93,175,120);
+	color: white;
 	text-decoration: none;
 }
 
