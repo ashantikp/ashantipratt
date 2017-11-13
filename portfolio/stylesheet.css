@@ -21,19 +21,29 @@ header {
 .row-header {
 	margin: 0px auto;
 	padding: 0px auto;
+	min-height: 200px;
+	padding: 20px 0px 20px 0px;
 }
 
 .jumbotron {
-	padding: 70px 30px 70px 30px;
+	padding: 20px 30px 70px 30px;
 	margin: 0px auto;
 	background-color: white;
-	max-height: 75%;
+	background-size: cover;
+	background-image: url(images/fern-1250903_crop.jpg);
+	color: white;
 	
 }
 
 /* webpage link stlye */
 
 a {
+	text-decoration: none;
+	color: #212223;
+}
+
+a: hover {
+	color: rgb(93,175,120);
 	text-decoration: none;
 }
 
@@ -161,7 +171,6 @@ h1 {
 img {
 	margin: auto;
 	display: block;
-	border: 7px solid white;
 }
 
 .WandH{
@@ -206,7 +215,8 @@ form input[type=submit]:hover {
 
 .footer {
 	margin: 0px auto;
-	padding: 150px 0px 20px 0px;
+	padding: 30px 0px 20px 0px;
+	background-color: #8e8f91;
 }
 
 footer a {
@@ -220,19 +230,31 @@ footer a:hover{
 }
 
 .projects{
-	height: 100px;
-	display: block;
+	height: 200px;
+	width: 200px;
+	-moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
 	font-size: 20px;
 	background-color: rgb(33,34,35);
 	color: white;
-	width: 50%;
 	box-shadow: 10px 10px 5px #888888;
+	text-align: center;
+	padding: 80px 0px 0px 0px;
 }
 
 .projects a {
 	color: white;
+	text-decoration: none;
 }
 .projects:hover{
 	background-color: #FFFFFF;
-	color: #212223;
+	color: rgb(93,175,120);
 }
+
+.projects a:hover {
+	color: rgb(93,175,120);
+	text-decoration-line: none;
+}
+
+
