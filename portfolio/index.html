@@ -17,17 +17,28 @@
 	<body>
 		
 		<!-- Logo header w/ hyperlink to homepage -->
-		<div class="navbar"> 
+
+		<a class="" href="#">
+			<img src="images/akplogo.svg" style="height: 150px;">
+		</a>
+
+		<div class="navbar navbar-dark navbar-expand-lg"> 
 			<div class="container justify-content-center">
-				<a href="index.html" class="navbar-brand">
-					<img src="images/akplogo.svg">
-				</a>
-					
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="Navbar">
+					<ul class="navbar-nav col-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">home</a></li>
+						<li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+					</ul>
+				</div>	
 			</div>
 		</div>
 
 			<!-- Navigation menu -->
-		<div>	
+		<!--div>	
 			<nav>
 				<ul>
 					<li><a href="#aboutme">about me</a></li>
@@ -35,9 +46,9 @@
 					<li><a href="contact.html">contact</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div-->
 
-		<div class="jumbotron">
+		<div class="jumbotron" style="padding-top: 50px;">
 			<div class="container header-img">
 				<div class="row row-header justify-content-center">
 					<div class="col-">
@@ -66,20 +77,20 @@
 									</p><br><br>
 										<div class="row row-content">
 											<div class="col-sm">
-									<a href="https://indd.adobe.com/view/33f45570-987a-4453-bdae-b998a6bdb25b" target="_blank">
-										<h2 class="projects">CV/RESUME</h2>
-									</a>	
-								</div>
-								<div class="col-sm">
-									<a href="projects.html">
-										<h2 class="projects">PROJECTS</h2>
-									</a>	
-								</div>
-								<div class="col-sm">
-									<a href="contact.html">
-										<h2 class="projects">CONTACT ME</h2>
-									</a>	
-								</div>
+												<a href="https://indd.adobe.com/view/33f45570-987a-4453-bdae-b998a6bdb25b" target="_blank">
+													<h2 class="projects">CV/RESUME</h2>
+												</a>	
+											</div>
+											<div class="col-sm">
+												<a href="projects.html">
+													<h2 class="projects">PROJECTS</h2>
+												</a>	
+											</div>
+											<div class="col-sm">
+												<a href="contact.html">
+													<h2 class="projects">CONTACT ME</h2>
+												</a>	
+											</div>
 										</div>
 								</div>
 								<div class="col-sm-4">
@@ -99,10 +110,9 @@
 						<div class="col-sm-4 offset-2">
 							<h5>Sitemap</h5>
 							<ul class="list-unstyled">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#aboutme">About Me</a></li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="contact.html">Contact Me</a></li>
+								<li><a href="index.html">home</a></li>
+								<li><a href="projects.html">projects</a></li>
+								<li><a href="contact.html">contact</a></li>
 							</ul>		
 						</div>
 						<div class="col-sm-4 offset-2">
