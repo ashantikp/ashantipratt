@@ -40,7 +40,7 @@ header {
 	margin: 0px auto;
 	background-color: white;
 	background-size: cover;
-	background-image: url(images/fern-1250903_crop.jpg);
+	background-image: url(fern-1250903_crop.jpg);
 	color: white;	
 }
 
@@ -50,24 +50,19 @@ header {
 }
 /* webpage link stlye */
 
-a {
+.link {
 	text-decoration: none;
-	color: #212223;
+	color: #464749;
 }
 
-a: hover {
+.link:hover {
 	color: rgb(93,175,120);
 	text-decoration: none;
 }
 
-h1 a:hover {
-	color: rgb(93,175,120);
-	text-decoration: none;
-}
 
-a:visited {
-	color: #212223; 
-}
+
+
 
 
 
@@ -203,20 +198,17 @@ form input[name=MESSAGE] {
 	height: 150px;
 }
 
-form input[type=submit] {
+.button {
 	background-color: white;
-	border-top-style: none;
-	border-left-style: none;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-color: #212223;
 	margin-top: 20px;
 	height: 30px;
 	font-family: verdana;
 	font-size: 15px;
+	color: rgb(93,175,120);
+	border-style: none;
 }
 
-form input[type=submit]:hover {
+.button:hover {
 	border-style: none;
 	background-color: rgb(33,34,35);
 	color: white;
@@ -227,17 +219,22 @@ form input[type=submit]:hover {
 .footer {
 	margin: 0px auto;
 	padding: 30px 0px 20px 0px;
-	background-color: #8e8f91;
+	color: white;
+	background-color: #464749;
 }
 
 footer a {
 	text-decoration: none;
-	color: #212223;
+	color: white;
 }
 
 footer a:hover{
 	color: white;
 	text-decoration: none;
+}
+
+.btn-social {
+	background-color: inherit;
 }
 
 .projects{
@@ -258,12 +255,9 @@ footer a:hover{
 	color: white;
 	text-decoration: none;
 }
+
 .projects:hover{
 	background-color: #FFFFFF;
-	color: rgb(93,175,120);
-}
-
-.projects a:hover {
 	color: rgb(93,175,120);
 	text-decoration-line: none;
 }

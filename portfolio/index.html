@@ -5,11 +5,16 @@
 		<meta ame="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
+		<!--Font awesome-->
+		<script src="https://use.fontawesome.com/7bd034b875.js"></script>
+
+
 		<!-- Bootstrap4 -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		
 		<!-- stylesheet -->
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/bootstrap-social.css">
 
 		<title>Ashanti Pratt</title>
 	</head>
@@ -17,11 +22,11 @@
 	<body>
 		
 		<!-- Logo header w/ hyperlink to homepage -->
-
 		<a class="" href="#">
 			<img src="images/akplogo.svg" style="height: 150px;">
 		</a>
 
+		<!-- Navigation menu -->
 		<div class="navbar navbar-dark navbar-expand-lg"> 
 			<div class="container justify-content-center">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -29,26 +34,26 @@
 				</button>
 				<div class="collapse navbar-collapse justify-content-center" id="Navbar">
 					<ul class="navbar-nav col-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.html">home</a></li>
-						<li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
-						<li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">projects</a>
+							 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						          <a class="dropdown-item" href="#">logos</a>
+						          <a class="dropdown-item" href="#">ux design</a>
+						          <a class="dropdown-item" href="websites.html">websites</a>
+					        </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">contact</a>
+						</li>
 					</ul>
 				</div>	
 			</div>
 		</div>
 
-			<!-- Navigation menu -->
-		<!--div>	
-			<nav>
-				<ul>
-					<li><a href="#aboutme">about me</a></li>
-					<li><a href="projects.html">projects</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</nav>
-		</div-->
-
-		<div class="jumbotron" style="padding-top: 50px;">
+		<div class="jumbotron jumbotron-fluid" style="padding-top: 50px;">
 			<div class="container header-img">
 				<div class="row row-header justify-content-center">
 					<div class="col-">
@@ -57,84 +62,98 @@
 			</div>
 		</div>
 
-			<!-- main content -->
-			<div class="container">
-				<div class="row row-header">
-					<div class="col-12">
-						<h1>Ashanti K. Pratt</h1>
-						<h4>Web Developer, UX Designer, Writer</h4>
-						<hr/>
-					</div>
-				</div>	
+		<!-- main content -->
+		<div class="container">
+			<div class="row row-header">
+				<div class="col-12">
+					<h1>Ashanti K. Pratt</h1>
+					<h4>Web Developer, UX Designer, Writer</h4>
+					<hr/>
+				</div>
+			</div>	
 
-				<div class="row row-content">
-					<div class="col-12">
-						<h2 id="aboutme">Here's Little About Me</h2>
-							<div class="row">
-								<div class="col-sm-7">
-									<p style="text-align: justify;">
-										Hi, Im Ashanti! My educational background is in English and writing studies, which propelled me into a grantwriting career in the non-profit sector. I've traveled Southeast Asia and immersed myself into various languages and cultures. Those experiences enhanced my love of arts, particularly digital arts. Now, with a certification in visual communications, my goal is to become a web developer as a way of merging my passions and pursuing my efforts to enhance grassroots organization by way of technology.
-									</p><br><br>
-										<div class="row row-content">
-											<div class="col-sm">
-												<a href="https://indd.adobe.com/view/33f45570-987a-4453-bdae-b998a6bdb25b" target="_blank">
-													<h2 class="projects">CV/RESUME</h2>
-												</a>	
-											</div>
-											<div class="col-sm">
-												<a href="projects.html">
-													<h2 class="projects">PROJECTS</h2>
-												</a>	
-											</div>
-											<div class="col-sm">
-												<a href="contact.html">
-													<h2 class="projects">CONTACT ME</h2>
-												</a>	
-											</div>
+			<div class="row row-content">
+				<div class="col-12">
+					<h2 id="aboutme">Here's Little About Me</h2>
+						<div class="row">
+							<div class="col-sm-7">
+								<p style="text-align: justify;">
+									Hi, Im Ashanti! My educational background is in English and writing studies, which propelled me into a grantwriting career in the non-profit sector. I've traveled Southeast Asia and immersed myself into various languages and cultures. Those experiences enhanced my love of arts, particularly digital arts. Now, with a certification in visual communications, my goal is to become a web developer as a way of merging my passions and pursuing my efforts to enhance grassroots organization by way of technology.
+								</p><br><br>
+									<div class="row row-content">
+										<div class="col-sm">
+											<a href="https://indd.adobe.com/view/33f45570-987a-4453-bdae-b998a6bdb25b" target="_blank">
+												<h2 class="projects">CV/RESUME</h2>
+											</a>	
 										</div>
-								</div>
-								<div class="col-sm-4">
-									<img src="images/headshot.jpg" style="width: 200px;">
-								</div>
-								
+										<div class="col-sm">
+											<a href="projects.html">
+												<h2 class="projects">PROJECTS</h2>
+											</a>	
+										</div>
+										<div class="col-sm">
+											<a href="contact.html">
+												<h2 class="projects">CONTACT ME</h2>
+											</a>	
+										</div>
+									</div>
 							</div>
-					</div>
+							<div class="col-sm-4">
+								<img src="images/headshot.jpg" style="width: 200px;">
+							</div>
+							
+						</div>
 				</div>
 			</div>
+		</div>
 					
-			<!-- footer section -->
-			
-			<footer class="footer">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-sm-4 offset-2">
-							<h5>Sitemap</h5>
-							<ul class="list-unstyled">
-								<li><a href="index.html">home</a></li>
-								<li><a href="projects.html">projects</a></li>
-								<li><a href="contact.html">contact</a></li>
-							</ul>		
-						</div>
-						<div class="col-sm-4 offset-2">
-							<h5>Find My Work</h5>
-							<ul class="list-unstyled">
-								<li><a href="#">behance</a></li>
-								<li><a href="https://github.com/ashantikp" target="_blank">github</a></li>
-								<li><a href="https://www.linkedin.com/in/ashantikp/" target="_blank">linkedin</a></li>
-								<li><a href="https://www.medium.com/@ashantikpratt" target="_blank">medium</a></li>
-							</ul>
-						</div>
+		<!-- footer section -->
+		
+		<footer class="footer">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-sm-4 offset-2">
+						<h5>Sitemap</h5>
+						<ul class="list-unstyled">
+							<li><a href="index.html">home</a></li>
+							<li><a href="projects.html">projects</a></li>
+							<li><a href="contact.html">contact</a></li>
+						</ul>		
 					</div>
-
-					<div class="row justify-content-center">
-						<div class="col-auto">
-							<br><p>© Copyright 2017 Ashanti K. Pratt</p>
-						</div>	
+					<div class="col-sm-4 offset-2">
+						<h5>Find My Work</h5>
+						<ul class="list-unstyled" style="display: flex;">
+							<li style="padding-right: 20px;">
+								<a href="#">
+									<span class="fa fa-behance fa-lg" aria-hidden="true"></span>
+								</a>
+							</li>
+							<li style="padding-right: 20px;">
+								<a href="https://github.com/ashantikp" target="_blank">
+									 <span class="fa fa-github fa-lg" aria-hidden="true"></span>
+								</a>
+							</li>
+							<li style="padding-right: 20px;">
+								<a href="https://www.linkedin.com/in/ashantikp/" target="_blank">
+									<span class="fa fa-linkedin fa-lg" aria-hidden="true"></span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:ashantikpratt@gmail.com?Subject=Portfolio%20Inquiry" target="_blank">
+									<span class="fa fa-envelope-o fa-lg" aria-hidden="true"></span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</footer>
-		</div>
 
+				<div class="row justify-content-center">
+					<div class="col-auto">
+						<br><p>© Copyright 2017 Ashanti K. Pratt</p>
+					</div>	
+				</div>
+			</div>
+		</footer>
 
 		<script type="text/javascript">
 	
