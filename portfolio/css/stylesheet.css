@@ -1,13 +1,32 @@
+/* color guide 
+
+#5daf78 - sea green
+#59896F - fern-green
+#3F737F - blue-green
+#212223 - dark gray
+#464749 - gray
+
+*/
 body {
 	font-family: verdana, arial, sans-serif;
 	color: #212223;
-	padding: 50px 0px 0px 0px;
+	padding: 200px 0px 0px 0px;
 	z-index: 0;
 }
 
 .navbar-dark {
-	background-color: #212223;
-	
+	background-color: #59896F;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+
+.navbar-toggler{
+	background-color: none;
+	color: #3F737F;
+	border-style: none;
 }
 
 .active {
@@ -38,7 +57,7 @@ header {
 .jumbotron {
 	padding: 20px 30px 70px 30px;
 	margin: 0px auto;
-	background-color: white;
+	background-color: #3F697F;
 	background-size: cover;
 	background-image: url(fern-1250903_crop.jpg);
 	color: white;	
@@ -77,7 +96,7 @@ header {
     float:right;*/
 }
 .navbar li a{
-	font-size: 20px;
+	font-size: 30px;
 	/*display: block;
 	padding: 10px;
 	text-align: right;
@@ -97,12 +116,12 @@ nav img{
 /* nav animation */
 
 .navbar li a:hover{
-	background-color: rgb(33,34,35);
+	background-color: #212223;
 	color: white;
 	text-decoration: none;
 }
 .navbar li a:active{
-	background-color: rgb(33,34,35);
+	background-color: #212223;
 	color: white;
 	font-style: italic;
 }
@@ -152,19 +171,30 @@ nav img{
 }*/
 
 @media screen and (max-width: 480px){
-	section {
-		display: block;
-		width: 100%;
+
+	body {
+		padding: 0px 0px 0px 0px;
 	}
-	img {
+	.navbar {
+		position: fixed;
+		top: 0;
 		width: 100%;
-	}
-	nav ul {
-		position: static;
+		height: 110px;
+		z-index: 1;
+
 	}
 
-	.footer {
-		background-color: #2e3033;
+	.navbar-toggler-icon {
+		font-size: 40px;
+	}
+
+	.navbar-dark {
+		background-color: #59896F;
+	}
+
+	.navbar-brand img{
+		height: 100px;
+		z-index: 1; 
 	}
 }
 
@@ -204,13 +234,13 @@ form input[name=MESSAGE] {
 	height: 30px;
 	font-family: verdana;
 	font-size: 15px;
-	color: rgb(93,175,120);
+	color: #5daf78;
 	border-style: none;
 }
 
 .button:hover {
 	border-style: none;
-	background-color: rgb(33,34,35);
+	background-color: #212223;
 	color: white;
 }
 
@@ -244,7 +274,7 @@ footer a:hover{
     -webkit-border-radius: 100px;
     border-radius: 100px;
 	font-size: 20px;
-	background-color: rgb(33,34,35);
+	background-color: #212223;
 	color: white;
 	box-shadow: 10px 10px 5px #888888;
 	text-align: center;
@@ -258,7 +288,7 @@ footer a:hover{
 
 .projects:hover{
 	background-color: #FFFFFF;
-	color: rgb(93,175,120);
+	color: #5daf78;
 	text-decoration-line: none;
 }
 
