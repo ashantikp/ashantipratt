@@ -33,27 +33,32 @@
 		</style>
 	</head>
 	<body>
-		<!-- Logo header w/ hyperlink to homepage -->
-	
-		<!--a class="" href="index.html">
-			<img src="images/akplogo.svg" style="height: 150px;">
-		</a-->
-
+		
 		<!-- Navigation menu -->
 
-		<div class="navbar navbar-dark navbar-expand-md"> 
+		<div class="navbar nav-bkgrnd navbar-expand-md"> 
 			<div class="container">
-				<a class="navbar-brand collapse" href="index.html">
+				<a class="navbar-brand collapse" href="#">
 					<img src="images/akplogo.svg">
 				</a>
-				<button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#Navbar">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-center" id="Navbar">
+
+				<div class="collapse navbar-collapse justify-content-end" id="Navbar">
 					<ul class="navbar-nav col-auto">
-						<li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-						<li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
-						<li class="nav-item active"><a class="nav-link" href="contact.html">contact</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><span>home</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="projects.html"><span>projects</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html"><span>blog</span></a>
+						</li>
+						<li class="nav-item  active">
+							<a class="nav-link" href="contact.html"><span>contact</span></a>
+						</li>
 					</ul>
 				</div>	
 			</div>
@@ -70,72 +75,84 @@
 
 		<!-- main content -->
 		<div class="container">
-			<div class="row row-content">
+			<div class="row row-header">
 				<div class="col-12">
-					<h1>CONTACT ME</h1><hr>	
-
-						<div class="row row-content">
-							<div class="col-sm-7">
-								<form style="display: block;">
-									first name*<br>
-									<input type="text" name="FIRST NAME" class="input"><br>
-									last name*<br>
-									<input type="text" name="LAST NAME" class="input"><br>
-									email*<br>
-									<input type="email" name="EMAIL" class="input"><br>
-									subject*<br>
-									<input type="text" name="SUBJECT" class="input"><br>
-									message*<br>
-									<input type="text" name="MESSAGE" class="input">
-									<br>
-									<input type="submit" name="submit" class="button">
-								</form>
-							</div>
-							<div class="col-sm-5">
-								<h5>For business inquires please email me at <strong><em>ashantikpratt@gmail.com</strong></em>.</h5>
-
-								<h5>For all other inquiries, questions or curiosities please use the form to send me a message.</h5>
-							</div>	
-						</div>	
+					<h1>CONTACT</h1><hr>
 				</div>
-			</div>
-		</div><br><br>
+			</div>	
+
+			<div class="row row-content">
+				<div class="col-sm-7">
+					<form style="display: block;">
+						first name*<br>
+						<input type="text" name="FIRST NAME" class="input"><br>
+						last name*<br>
+						<input type="text" name="LAST NAME" class="input"><br>
+						email*<br>
+						<input type="email" name="EMAIL" class="input"><br>
+						subject*<br>
+						<input type="text" name="SUBJECT" class="input"><br>
+						message*<br>
+						<input type="text" name="MESSAGE" class="input">
+						<br>
+						<input type="submit" name="submit" class=" button card-link">
+					</form>
+				</div>
+				<div class="col-sm-5">
+					<h5>For business inquires please email me at <strong><em>ashantikpratt@gmail.com</strong></em>.</h5>
+
+					<h5>For all other inquiries, questions or curiosities please use the form to send me a message.</h5>
+				</div>	
+			</div>	
+		</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 		<!-- footer section -->
-			
 		<footer class="footer">
 			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="index.html">
+						<img src="images/akpLogogrey.png" style="width: 30%">
+					</div>
+				</div><br>
 				<div class="row align-items-center">
 					<div class="col-sm-4 offset-2">
-						<h5>Sitemap</h5>
+						<h3>Find Out More</h3>
 						<ul class="list-unstyled">
-							<li><a href="index.html">home</a></li>
-							<li><a href="projects.html">projects</a></li>
+							<li><a href="#aboutme">about me</a></li>
+							<li><a href="blog.html">blog</a></li>
 							<li><a href="contact.html">contact</a></li>
 						</ul>		
 					</div>
-					<div class="col-sm-4 offset-2">
-						<h5>Find My Work</h5>
-						<ul class="list-unstyled" style="display: flex;">
-							<li style="padding-right: 20px;">
+					<div class="col-sm">
+						<h3>Projects</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">logos</a></li>
+							<li><a href="projects.html">ux design</a></li>
+							<li><a href="contact.html">websites</a></li>
+						</ul>		
+					</div>
+					<div class="col-sm">
+						<ul class="list-unstyled social" style="display: flex;">
+							<li style="padding-right: 25px; color: #FE2712;">
 								<a href="#">
-									<span class="fa fa-behance fa-lg" aria-hidden="true"></span>
+									<span class="fa fa-behance fa-2x" aria-hidden="true"></span>
 								</a>
 							</li>
-							<li style="padding-right: 20px;">
-								<a href="https://github.com/ashantikp" target="_blank">
-									 <span class="fa fa-github fa-lg" aria-hidden="true"></span>
+							<li style="padding-right: 25px;">
+								<a href="https://github.com/ashantikp">
+									 <span class="fa fa-github fa-2x" aria-hidden="true"></span>
 								</a>
 							</li>
-							<li style="padding-right: 20px;">
-								<a href="https://www.linkedin.com/in/ashantikp/" target="_blank">
-									<span class="fa fa-linkedin fa-lg" aria-hidden="true"></span>
+							<li style="padding-right: 25px;">
+								<a href="https://www.linkedin.com/in/ashantikp/">
+									<span class="fa fa-linkedin fa-2x" aria-hidden="true"></span>
 								</a>
 							</li>
-							<li style="padding-right: 20px;">
-								<a href="mailto:ashantikpratt@gmail.com?Subject=Portfolio%20Inquiry" target="_blank">
-									<span class="fa fa-envelope-o fa-lg" aria-hidden="true"></span>
+							<li>
+								<a href="mailto:ashantikpratt@gmail.com?Subject=Portfolio%20Inquiry">
+									<span class="fa fa-envelope-o fa-2x" aria-hidden="true"></span>
 								</a>
 							</li>
 						</ul>
@@ -144,10 +161,13 @@
 
 				<div class="row justify-content-center">
 					<div class="col-auto">
-						<br><p>© Copyright 2017 Ashanti K. Pratt</p>
+						<br><br><h5>Copyright© 2017 | Ashanti K. Pratt | All Rights Reserved</h5><br>
 					</div>	
 				</div>
 			</div>
 		</footer>
+
+
+
 	</body>
 </html>
