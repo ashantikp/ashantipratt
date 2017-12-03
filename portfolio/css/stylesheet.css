@@ -55,6 +55,7 @@ hr {
 
 .nav-bkgrnd {
 	background-color: #d6d0c9;
+	position: fixed;
 	margin: -200px 0px 0px 0px;
 	width: 100%;
 	z-index: 1;
