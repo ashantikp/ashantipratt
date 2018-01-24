@@ -7,35 +7,62 @@
 #464749 - gray
 
 */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 50%;
+}
+
 body {
 	font-family: verdana, arial, sans-serif;
 	color: #212223;
-	padding: 200px 0px 0px 0px;
+	padding: 20rem 0 0 0;
 	z-index: 0;
+	font-size: 1.6rem;
+
+	box-sizing: border-box;
 }
 
 
-img {
+.card img {
 	margin: auto;
-	display: block;
+	display: inline-block;
+	width: 60rem;
+
+}
+
+.card-text {
+	width: 60rem;
+
 }
 
 .WandH{
 	width: 30%;
-	height: 300px;
+	height: 30rem;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 5rem;
 	text-transform: uppercase;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 4rem;
+}
+
+h3 {
+	color: #59896F;
+	font-size: 3rem;
 }
 
 p {
-	font-size: 25px;
+	font-size: 2.5rem;
 	color: #5e5d5b;
 }
 
@@ -47,8 +74,8 @@ hr {
 
 .row-content {
 	margin: 0px auto;
-	padding: 50px 0px 50px 0px;
-	min-height: 400px;
+	padding: 5rem 0 5rem 0;
+	min-height: 40rem;
 }
 
 /* navigation menu */
@@ -56,12 +83,32 @@ hr {
 .nav-bkgrnd {
 	background-color: #d6d0c9;
 	position: fixed;
-	margin: -200px 0px 0px 0px;
+	margin: -20rem 0 0 0;
 	width: 100%;
 	z-index: 1;
 }
 
-.navbar-toggler{
+.navbar-brand {
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.navbar-toggler-icon{
 	background-color: none;
 	color: #3F737F;
 	border-style: none;
@@ -72,8 +119,8 @@ hr {
 }
 
 .nav-link {
-	font-size: 30px;
-	padding-right: 20px;
+	font-size: 3rem;
+	padding-right: 2rem;
 }
 
 /* nav animation */
@@ -87,7 +134,7 @@ hr {
 .active a span{
 	text-transform: lowercase;
 	color: white;
-	padding: 15px 0;
+	padding: 1.5rem 0;
 	box-shadow: inset 0px -5px 0px #f2ab00;
 }
 
@@ -99,15 +146,15 @@ header {
 }
 
 .row-header {
-	margin: 0px 0px 60px 0px;
+	margin: 0 0 6rem 0;
 	padding: 0px auto;
-	min-height: 200px;
-	padding: 150px 0px 20px 0px;
+	min-height: 20rem;
+	padding: 15rem 0 2rem 0;
 }
 
 .jumbotron {
-	padding: 20px 30px 70px 30px;
-	margin: 0px auto;
+	padding: 2rem 3rem 7rem 3rem;
+	margin: 0 auto;
 	background-color: #3F697F;
 	background-size: cover;
 	background-image: url(fern-1250903_crop.jpg);
@@ -116,13 +163,13 @@ header {
 
 .jumbotron h1{
 	font-weight: bolder;
-	letter-spacing: 5px;
+	letter-spacing: .5rem;
 }
 
 
 
 
-/*responsive screens */
+/*responsive screens 
 @media screen and (max-width: 480px){
 
 	body {
@@ -139,6 +186,7 @@ header {
 
 	.navbar-toggler-icon {
 		font-size: 40px;
+		background-color: #464749;
 	}
 
 	.navbar-dark {
@@ -149,25 +197,52 @@ header {
 		height: 100px;
 		z-index: 1; 
 	}
-}
+}*/
 
 .icon {
-	color: #59896F;
-	padding: 0 0 20px 0;
+	color: #afadaa;
+	padding: 0 0 2rem 0;
 }
 
-.projects{
+.icon:hover {
+	color: #f2ab00;
+}
+
+
+.headshot {
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	height: 40rem;
+	border-radius: 20rem;
+
+}
+
+.box{
 	
-	margin: 0px 80px 80px 0px;
-	-moz-border-radius: 100px;
+	margin: 0 8rem 8rem 0;
+	/*-moz-border-radius: 100px;
     -webkit-border-radius: 100px;
-    border-radius: 150px;
-	font-size: 20px;
-	background-color: #59896F;
-	color: white;
-	box-shadow: 10px 10px 5px #888888;
+    border-radius: 150px; 
+    rgba(214, 208, 201, 0.3)
+
+	box-shadow: 10px 10px 5px #888888;*/
+    height: 40rem;
+    width: 45rem;
+	font-size: 2.5rem;
+	background-color: ;
 	text-align: center;
-	padding: 50px;
+	align-content: center;
+	padding: 10rem;
+}
+
+.box:hover{
+	box-shadow: 1rem #f2ab00;
+
+}
+
+.vertical-text{
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
 }
 
 .projects a {
@@ -185,18 +260,18 @@ header {
 
 .card-title {
 	font-weight: bolder;
-	font-size: 60px;
+	font-size: 6rem;
 }
 
 .card-subtitle {
 	font-style: ;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 .card-link {
 	color: #59896F;
-	font-size: 30px;
+	font-size: 3rem;
 	font-weight: bold;
 }
 
@@ -275,6 +350,15 @@ footer a:hover{
 	background-color: #d6d0c9;
 	max-height: inherit;
 	
+}
+
+
+#hidden {
+	display: none;
+}
+
+.visible {
+	display: initial;
 }
 
 

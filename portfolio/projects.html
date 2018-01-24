@@ -7,7 +7,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 		<!--Font awesome-->
-		<script src="https://use.fontawesome.com/7bd034b875.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
 		<!-- Bootstrap4 -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -52,14 +52,14 @@
 		</div>
 
 
-		<div class="jumbotron" style="padding-top: 50px;">
+		<!--div class="jumbotron" style="padding-top: 50px;">
 			<div class="container header-img">
 				<div class="row row-header justify-content-center">
 					<div class="col-">
 					</div>	
 				</div>
 			</div>
-		</div>
+		</div-->
 			
 		<!-- main content -->	
 
@@ -81,15 +81,15 @@
 					<h2>UX DESIGN</h2> 
 				</div>
 
-				<div class="col-sm-12 projects" id="websites">
-					<h2>WEBSITES</h2>
-				</div>
+				
 			</div>
 		</div>
 					<!--main content-->
-		<div class="container">
-			
-
+		
+							
+		<div class="container" onclick="makeVisible();" id="hidden">
+			<div class="col-sm-12 projects" id="websites">
+					<h2>WEBSITES</h2>
 			<div class="card" style="border-style: none;">
 				<h5 class="card-subtitle mb-2 text-muted">html, css, javascript</h5>
 				<h3 class="card-title">The Queue: Deli Counter</h3>
@@ -108,17 +108,17 @@
 		</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 		<!-- footer section -->
-
+		
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<a href="index.html">
-						<img src="images/akpLogogrey.png" style="width: 30%">
+						<img src="images/akpLogoGrey.svg" style="width: 40%">
 					</div>
 				</div><br>
 				<div class="row align-items-center">
-					<div class="col-sm-4 offset-2">
+					<div class="col-md-4 ">
 						<h3>Find Out More</h3>
 						<ul class="list-unstyled">
 							<li><a href="#aboutme">about me</a></li>
@@ -126,7 +126,7 @@
 							<li><a href="contact.html">contact</a></li>
 						</ul>		
 					</div>
-					<div class="col-sm">
+					<div class="col-md-4">
 						<h3>Projects</h3>
 						<ul class="list-unstyled">
 							<li><a href="#">logos</a></li>
@@ -134,28 +134,25 @@
 							<li><a href="contact.html">websites</a></li>
 						</ul>		
 					</div>
-					<div class="col-sm">
+					<div class="col-md-4">
 						<ul class="list-unstyled social" style="display: flex;">
-							<li style="padding-right: 25px; color: #FE2712;">
-								<a href="#">
-									<span class="fa fa-behance fa-2x" aria-hidden="true"></span>
-								</a>
-							</li>
-							<li style="padding-right: 25px;">
-								<a href="https://github.com/ashantikp">
-									 <span class="fa fa-github fa-2x" aria-hidden="true"></span>
-								</a>
-							</li>
-							<li style="padding-right: 25px;">
-								<a href="https://www.linkedin.com/in/ashantikp/">
-									<span class="fa fa-linkedin fa-2x" aria-hidden="true"></span>
-								</a>
-							</li>
-							<li>
+							
+							<li style= "padding-right: 30px">
 								<a href="mailto:ashantikpratt@gmail.com?Subject=Portfolio%20Inquiry">
-									<span class="fa fa-envelope-o fa-2x" aria-hidden="true"></span>
+									<span class="far fa-envelope" aria-hidden="true" title="Email"></span>
 								</a>
 							</li>
+							<li style="padding-right: 30px;">
+								<a href="https://github.com/ashantikp">
+									 <span class="fab fa-github" title="Github"></span>
+								</a>
+							</li>
+							<li style="padding-right: 30px;">
+								<a href="https://linked.com/in/ashantikp">
+									<span fab class= "fab fa-linkedin-in" title="LinkedIn" ></span>
+								</a>
+							</li>
+							
 						</ul>
 					</div>
 				</div>
@@ -167,5 +164,14 @@
 				</div>
 			</div>
 		</footer>
+
+		<script type="text/javascript">
+			function makeVisible() {
+
+				var hidden = document.getElementById("hidden")
+
+				hidden.className = "visible";
+			}
+		</script>
 	</body>
 </html>
