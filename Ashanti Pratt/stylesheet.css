@@ -1,0 +1,363 @@
+/*
+COLORS:
+
+Black: #000;
+Dark Grey: #242222;
+Gold: #FFC914; transparent-gold: rgba(225, 201, 20, 0.6)
+Teal: #3388A6; transparent-teal: rgba(51,136, 166, 0.5);
+
+*/
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.50%;
+}
+
+body {
+	font-family: nunito, san-serif;
+	/*font-size: 16px;*/
+	line-height: 1.7;
+	color: #000;
+
+	box-sizing: border-box;
+}
+
+.header{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.logo-box{
+    position: absolute;
+    top: 2rem;
+	left: 2rem;
+}
+
+.logo{
+    height: 8rem;
+}
+
+.nav{
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    z-index: 1;
+
+    list-style: none;
+
+}
+
+.nav-menu-icon{
+    font-size: 2em;
+    display: none;
+    color: #000;
+ }
+
+.nav-icons{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.nav-icons--active{
+    color: #686868
+}
+
+.nav-icons:hover{
+    color: #686868;
+}
+
+.heading-primary{
+    padding-top: 5rem;
+    position: relative;
+    top:10rem;
+}
+
+.heading-primary--main{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+
+.heading-primary--sub{
+}
+
+.heading-sub{
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.8);
+    border-bottom: 3px solid rgba(255,255,255, 0.8);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    position: relative;
+    top: 40%;
+    left: 25%;
+} /* header and nav */
+
+.main-content{
+    position: static;
+    height: 100%;
+}
+
+.main-box{
+    width: 50vw;
+    height: 400px;
+    position: relative;
+    display: inline;
+    text-align: center;
+    top: 25rem;
+
+}
+
+.main-box--active{
+    width: 100vw;
+}
+
+.main-box--inactive{
+    width: 0vw;
+}
+
+.center-box {
+    width: 80vw;
+    margin-left: 10%;
+    padding: 1.5rem 4rem;
+    position: relative;
+    display: inline;
+    top: 50rem;
+}
+
+@media screen and (max-width: 480px) {
+    .main-box{
+        width: 100vw;
+        display: block;
+    }
+
+    .nav-icons{
+        display: none;
+    }
+
+    .nav-menu-icon{
+        display: block;
+    }
+
+    .heading-sub{
+       position: relative;
+       top: 40%;
+       left: 5%; 
+    }
+
+    .main-box--inactive{
+        display: none;
+
+}
+}
+
+.black{
+    background-color: #000;
+    color: #fff;
+    float: left;
+}
+
+.gold{
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba(225, 201, 20, 0.6), rgba(225, 201, 20, 0.6)),
+    url(images/pexels-photo-205421.jpeg);
+    background-position: center;
+    background-size: cover;
+    float: right;
+}
+
+.blue{
+     background-color: rgba(51,136, 166, 0.5);
+     float: left;
+}
+
+.gold--inactive{
+    background-position: right;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+}
+
+.btn--black{
+    border: 5px solid rgba(255,255,255, 0.8);
+    color: rgba(51,136, 166, 0.5);
+    background-color: #000;
+
+}
+
+.btn--black:hover{
+    background-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.btn--gold{
+    border: 5px solid rgba(51,136, 166, 0.5);
+    color: white;
+}
+
+.btn--gold:hover{
+    background-color: #3388A6;
+    color: white;
+} /* buttons */
+
+.about-me{
+    width: 20rem;
+    position: relative;
+    top: 40rem;
+    display: block;
+    color: #000;
+    text-align: center; 
+}
+
+.about-me h2{
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+}
+
+.about-me hr {
+    width: 20%;
+    margin-left: 40%;
+    border-top: 3px solid;
+}
+
+div.about-me-img{
+    width: 50rem;
+    height: 50rem; 
+background-image: 
+ linear-gradient(
+    to right bottom, 
+    rgba(51,136, 166, 0.5), rgba(51,136, 166, 0.5)),
+    url(images/IMG_4219.JPG);
+    background-size: cover;
+    padding: 10%;
+    position: relative;
+    top: 10rem;
+    padding-bottom: 5rem;
+
+    display: block;
+    border-radius: 25rem;
+    -webkit-border-radius: 25rem;
+    -moz-border-radius: 25rem;
+}
+
+.about-me p{
+    font-size: 2rem;
+    position: relative;
+    top: 50rem;
+} /* about me */
+
+
+
+form input{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.input {
+    width: 100%;
+}
+
+form input[name=MESSAGE] {
+    width: 20rem;
+    height: 20rem;
+}
+
+/* Dialog Box */
+
+#diaglog-overlay {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 10;
+
+}
+
+#dialog-box {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+}
+
+#dialog-box-head {
+    padding: 1rem;
+    color: #3388A6;
+
+
+}
+
+#dialog-box-body{
+
+}
+
+#dialog-box-foot{
+
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #464749;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -200rem;
+    height: inherit;
+    width: 100vw;
+    padding-top: 5rem;
+
+    overflow-x: hidden;
+}
+
+.social-media-icon:link,
+.social-media-icon:visited{
+    text-decoration: none;
+    color: #464749;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.social-media-icon:hover{
+    color: #fff;
+} /* footer */
+
+    

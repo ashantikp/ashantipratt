@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Font awesome-->
+		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <title>Ashanti K. Pratt | Web Developer</title>
+  </head>
+  <body>
+
+    <header class="header">
+
+      <a href="main.html" class="header">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Ashanti K Pratt</span>
+          <span class="heading-primary--sub">Web Developer, UX Designer</span>
+        </h1>
+      </a>
+      <nav class="nav">
+        <span class="fas fa-bars nav-menu-icon"></span>
+        <div class="nav-icons">
+          <ul style="list-style: none;">
+            <li>
+              <a href="main.html" class="nav-icons nav-icons--active" title="about me">
+                <span class="fas fa-user-circle"></span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-icons" title="contact me">
+                <span class="fas fa-envelope"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-icons" title="projects">
+                <span class="fas fa-archive"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!--main content-->
+
+    <div id="dialog-overlay"></div>
+    <div id="dialog-box">
+      <div>
+        <div id="dialog-box-head"></div>
+        <div id="dialog-box-body"></div>
+        <div id="dialog-box-foot"></div>
+      </div>
+    </div>
+    
+    <div class="">
+      <div class="">
+        <div class="main-box black center">
+          <button  id="status" class="btn btn--black" onclick= "prmpt.render('get in touch!', 'sendMail')"> 
+            Get in touch
+          </button>
+        </div>
+
+        <div class=" main-box gold justify-content-center">
+          <a href="#" class="btn btn--gold">
+            View my work
+          </a>
+        </div>
+      </div>
+    </div>  
+
+    <div class="container" style="width: 50rem;"> 
+      <div class="row row-header justify-content-center">
+        <div class="col-12 about-me">
+          <h2>About Me</h2><hr>
+            <div class="row justify-content-center">
+              <div class="col-12 about-me-img rounded-circle">
+              <p>
+                Hi, Im Ashanti! My educational background is in English and writing studies, which propelled me into a grantwriting career in the non-profit sector. I've traveled Southeast Asia and immersed myself into various languages and cultures. Those experiences enhanced my love of arts, particularly digital arts. Now, with a certification in visual communications, my goal is to become a web developer as a way of merging my passions and pursuing my efforts to enhance grassroots organization by way of technology.
+              </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+      <footer class="footer">
+        <div class="row">
+          <div class="col-12">
+            <ul class="list-unstyled justify-content-center" style="display: flex;">
+              <li>
+                <a href="mailto:ashantikpratt@gmail.com?Subject=Portfolio%20Inquiry" class="social-media-icon">
+                  <span class="far fa-envelope" aria-hidden="true" title="Email"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/ashantikp" class="social-media-icon">
+                   <span class="fab fa-github" title="Github"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linked.com/in/ashantikp" class="social-media-icon">
+                  <span fab class= "fab fa-linkedin-in" title="LinkedIn" ></span>
+                </a>
+              </li>
+             <li>
+              <a href="https://medium.com/@ashantikpratt" class="social-media-icon">
+                <span fab class= "fab fa-medium-m" title="Medium" ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h5>Copyright© 2018 | Ashanti K. Pratt. All Rights Reserved</h5>
+       
+    </footer>
+    
+
+    <!-- bootstrap scripts  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- my scripts-->
+    <script type="text/javascript">
+      function sendMail(message){
+        document.getElementById('status').innerHTML = message;
+      }
+      
+      function customPrompt(){
+        this.render = function(dialog,func){
+          var winW = window.innerWidth;
+          var winH = window.innerHeight;
+          var dialogOverlay = document.getElementById('dialog-overlay');
+          var dialogBox = document.getElementById('dialog-box');
+
+
+          dialogOverlay.style.display = "block";
+          dialogOverlay.style.height = winH+"px";
+
+          dialogBox.style.left = (winW/2) - (550* .5)+"px";
+          dialogBox.style.top = "100px";
+          dialogBox.style.display = "block";
+
+          document.getElementById('dialog-box-head').innerHTML = 'Get in touch!';
+           document.getElementById('dialog-box-body').innerHTML = dialog;
+            document.getElementById('dialog-box-body').innerHTML += '<br><input id="prompt_value1">';
+             document.getElementById('dialog-box-foot').innerHTML = '<button onclick="prompt.ok(\''+func+'\')">OK;
+        }
+
+        this.ok = function(){
+
+        }
+      }
+
+      var prmpt = new customPrompt();
+    </script>
+  </body>
+</html>
